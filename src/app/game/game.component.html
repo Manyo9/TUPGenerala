@@ -1,0 +1,9 @@
+<div class="container py-5">
+    <h3>Tu tirada:</h3>
+    <span *ngFor="let x of array">
+        <app-dice [side]="x"></app-dice>
+    </span>
+    <br><br>
+    <button class="btn btn-success" (click)="tirarDados()">Tirar dados!</button>
+    <br><br><span style="color:green" *ngIf="salioGenerala()">Generala!!!!</span>   
+</div>
